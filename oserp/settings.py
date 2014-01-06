@@ -70,21 +70,21 @@ import dj_database_url
 # you've performed `heroku create`, then you need
 # to destroy the app and create a new one with `heroku create`
 # That is the only way it will sync up with the DB
-DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite')
-}
+#DATABASES = {
+#    'default': dj_database_url.config(default='sqlite:///db.sqlite')
+#}
 
 # For future use 
-# DATABASES = {
-#     'default': {
-#         'ENGINE':'django.db.backends.' + os.environ.get('DJ_ENGINE', 'sqlite3'),
-#         'NAME': os.environ.get('DJ_NAME'),
-#         'USER': os.environ.get('DJ_USER'),
-#         'PASSWORD': os.environ.get('DJ_PASS'),
-#         'HOST': os.environ.get('DJ_HOST'),
-#         'PORT': os.environ.get('DJ_PORT'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE':'django.db.backends.' + os.environ.get('DJ_ENGINE', 'sqlite3'),
+        'NAME': os.environ.get('DJ_NAME'),
+        'USER': os.environ.get('DJ_USER'),
+        'PASSWORD': os.environ.get('DJ_PASS'),
+        'HOST': os.environ.get('DJ_HOST'),
+        'PORT': os.environ.get('DJ_PORT'),
+    }
+}
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()

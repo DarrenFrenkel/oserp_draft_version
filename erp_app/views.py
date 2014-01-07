@@ -4,7 +4,7 @@ from django.utils import timezone
 import datetime
 import time
 from django import forms
-from erp_app.models import Customers
+from erp_app.models import Customer
 from django.template import RequestContext, loader
 
 def index(request):

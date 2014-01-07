@@ -35,6 +35,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'erp_app',
+    'south'
 )
 
 MIDDLEWARE_CLASSES = (

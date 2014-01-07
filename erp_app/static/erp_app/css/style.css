@@ -1,0 +1,26 @@
+.left_side_margin{
+	height:650px;
+	width:160px;
+	background-color:#1F3093;
+}
+
+.logo{
+	height:53;
+	width:145;
+	margin-left:10px;
+}
+.side_nav{
+	height:587;
+	width:160px;
+}
+
+.side_nav ul li{
+	list-style-type: none;
+	color:#D2D5E8;
+	font-family: "HelveticaNeue-Roman", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size:19px;
+	margin-left:12px;
+	padding-bottom:20px;
+
+	
+}

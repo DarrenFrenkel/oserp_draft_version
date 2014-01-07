@@ -44,6 +44,9 @@ class Order(models.Model):
     payment_due_date = models.DateTimeField('Payment Due Date') 
     custom_message = models.TextField()
 
+    def __unicode__(self):
+      return self.custom_message
+
 class Product(models.Model):
     name = models.CharField(max_length=500) 
     description = models.CharField(max_length=500)
